@@ -3,73 +3,12 @@
   <head>
   	<title></title>
   	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<link rel="stylesheet" type="text/css" href="/style.css">
   </head>
   
   <body>
     <style>
-    *{
-      margin: 0;
-      padding: 0;
-    }a{
-      text-decoration: none;
-      color: white;
-    }
-      li{
-        display: inline-block;
-         font-size: small;
-        width: 32%;
-        color: black;
-        background: grey;
-      }
-      .resultimg{
-        width: 100%;
-        height: auto;
-      }
-      .timetext{
-        display: none;
-      }
-      .infotext{
-        text-align: center;
-        color: black;
-        font-size: medium;
-      }
-      .name{
-        color: white;
-        text-decoration: none;
-      }.rating{
-        font-size: ;
-        color: yellow;
-      }
-      nav{
-    
-  
-        width: 100%;
-        background:black ;
-      }
-      .nam{
-        color: white;
-        font-size: 20px;
-        animation: ani 10s linear infinite;
-        
-      }
-      
-      @keyframes ani{
-        0%{color: white; }
-        15%{color: yellow; }
-        30%{color: green; }
-        45%{color: red; }
-        30%{color: skyblue; }
-        75%{color: pink; }
-        90%{color: neon; }
-        100%{color: white; }
-        
-      }
-      small{
-        font-size: 10px;
-        text-align: right;
-        float: right;
-      }
+
     </style>
   
   <a href="intent:http://devimages.apple.com/iphone/samples/bipbop/bipbopall.m3u8#Intent;package=com.mxtech.videoplayer.ad;S.title=New%20title;end">Launch through Intent scheme.</a>
@@ -80,13 +19,29 @@
     </small>
     </nav>
   <br>
-  <a href="/mylist">My list<a>
+  <a href="/mylist"><center>My list</center><a>
   <form method="get" action="/search">
   <input type="text"  class="input" name="q">
   </form>
     <a class="btn">Search</a>
-  </center><br>
+  </center><br/>
     <div class="box" >yo wait</div>
+
+
+    <div class="footer">   
+   <a class="f2" href="/mylist"><center>My list</center></a>
+     
+      <div class="f1">   
+          <form class="fsearch-box" method="get" action="/search">
+          <input name="q" class="fsearch" type="text" placeholder="Search here">
+        <button class="fbtn">Search</button>
+      </form>
+
+         </div>
+         <a class="f2" href="/"><center>Home</center></a>
+    </div>
+    <div style="height: 52px;width: 100%;">footer </div>
+    
   <script type="text/javascript">
   
   var input =document.querySelector('.input')
@@ -95,7 +50,11 @@
   input.addEventListener('input',()=>{
     btn.href='/search?q='+input.value
   })
+
   	var xhr=new XMLHttpRequest()
+    xhr.onreadystatechange=function(){
+      box.innerHTML=this.readyState
+    }
   	xhr.onload=function(){
   	  box.innerHTML=this.responseText
      var ps=document.querySelectorAll('.name')

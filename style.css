@@ -1,0 +1,143 @@
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    html{
+      scroll-behavior: smooth;
+    }
+    body{
+      height: 100vh;
+    }
+    a{
+      text-decoration: none;
+      color: white;
+    }
+      li{
+        display: inline-block;
+         font-size: small;
+        width: 32%;
+        color: black;
+        background: grey;
+      }
+      .resultimg{
+        width: 100%;
+        height: auto;
+      }
+      .timetext{
+        display: none;
+      }
+      .infotext{
+        text-align: center;
+        color: black;
+        font-size: medium;
+      }
+      .name{
+        color: white;
+        text-decoration: none;
+      }.rating{
+        font-size: ;
+        color: yellow;
+      }
+      nav{
+    
+  
+        width: 100%;
+        background:black ;
+      }
+      .nam{
+        color: white;
+        font-size: 20px;
+        animation: ani 10s linear infinite;
+        
+      }
+      
+      @keyframes ani{
+        0%{color: white; }
+        15%{color: yellow; }
+        30%{color: green; }
+        45%{color: red; }
+        30%{color: skyblue; }
+        75%{color: pink; }
+        90%{color: neon; }
+        100%{color: white; }
+        
+      }
+      small{
+        font-size: 10px;
+        text-align: right;
+        float: right;
+      }
+      .footer{
+        box-shadow: -10px 0 10px black;
+        position: fixed;
+        bottom: 0;
+        margin: 0;
+        margin-top: 50px;
+        padding: 0;
+        background: #414141;
+        height: 50px;
+        width: 100vw;
+        overflow: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+       direction: rtl;
+
+      }
+      .f1{
+        
+        height: 50px;
+        padding: 0 5px 0 5px;
+        display: inline-block;
+        width: 80%;
+        direction: ltr;
+        
+       
+      }
+      .f2{
+        width: 50%;
+        max-width: 300px;
+
+        height: 100%;
+        background: #333333;
+        direction:ltr;
+        display: inline-block;
+        background: #555555;
+        font-size:x-large;
+        vertical-align: middle;
+       
+      }
+      .f2 center
+      {
+        color: yellow;
+       padding: 10px;
+      }
+      .fsearch-box{
+        
+        display: flex;
+        justify-content: flex-end;
+        height: 30px;
+      
+      }.fbtn{
+        width: 47px;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+        border:none;
+        outline: none;
+
+      }
+      .fsearch{
+        width: 250px;
+        text-align: center;
+        font-size: large;
+        outline: none;
+          border:none;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+      }
+      .mylist{
+        background: #555555;
+        font-size:x-large;
+       width: 100%;
+
+       
+      }

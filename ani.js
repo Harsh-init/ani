@@ -12,18 +12,22 @@ var storage=__dirname+'/received'
 var animelist=[]
 // server modules to use
 app.use(express.urlencoded({extended:true}))
-  fs.readFile('anime.txt','utf-8',(e,o)=>{
-     if (e) {console.log(e)}
-      else{
+fs.readFile('anime.txt','utf-8',(e,o)=>{
+     if (e) {
+      console.log(e)
+     }else{
         console.log('Loaded list ******* * ** * * *')
         animelist=JSON.parse(o)
       }
-   })
+})
 
 app.get('/',(req,res)=>{
 	console.log('sendhome')
 	res.sendFile(__dirname+'/ani.html')
-
+})
+app.get('/style.css',(req,res)=>{
+  console.log('send-stylesheet')
+  res.sendFile(__dirname+'/style.css')
 })
 app.get('/getsearch',(req,res)=>{
 	var query=req.query.q

@@ -1,4 +1,22 @@
 console.time(":)")
+var footer=`
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <div class="footer">   
+   <a class="f2" href="/mylist"><center>My list</center></a>
+     
+      <div class="f1">   
+          <form class="fsearch-box" method="get" action="/search">
+          <input name="q" class="fsearch" type="text" placeholder="Search here">
+        <button class="fbtn">Search</button>
+      </form>
+         </div>
+
+         <a class="f2" href="/"><center>Home</center></a>
+    </div>
+    <div style="height: 52px;width: 100%;">
+    `;
+
+
 
 function search(query){
  console.log(query)
@@ -31,7 +49,8 @@ function search(query){
   	xhr.send()
     </script>
     
-  `
+  `+footer
+
   return file
 }
 
@@ -60,7 +79,8 @@ function link(obj){
     xhttp.send()
   </script>
 
- `
+ `+footer
+
  return file
 }
 
@@ -123,7 +143,7 @@ function main(obj){
        </center>
        <div class="epbox"></div>
        <div class="anime">
-         <img class="iimg" width="50%" src="https://cdn.myanimelist.net/images/anime/10/73591.jpg">
+         <img class="iimg" width="50%" src="https://cdn.myanimelist.net/images/anime/10/47347.jpg">
          <div class="info"> 
           <div class="itype">Type : </div>
            <div class="iep">Episodes : </div>
@@ -177,15 +197,17 @@ function main(obj){
   var tboxas=tbox.querySelectorAll('a')
   
 
-for (i = 0; i < tboxas.length; i++) {
+ for (i = 0; i < tboxas.length; i++) {
+  console.log(tboxas)
     tboxas[i].target='_blank'
     tboxas[i].onclick=function(e){
       e.preventDefault()
-      window.open(this.href)
+      var zz=window.open(this.href)
      window.focus()
+     
     }
       
-}
+ }
 
           }
        }
@@ -259,7 +281,8 @@ for (i = 0; i < tboxas.length; i++) {
     
   
        </script>
-  `
+  `+footer
+
   return file
 }
 
@@ -388,7 +411,8 @@ function mylist(obj){
 
 
 
-  `
+  `+footer
+
   return file 
 }
 
