@@ -1,4 +1,5 @@
 console.time(":)")
+
 var footer=`
     <link rel="stylesheet" type="text/css" href="/style.css">
     <div class="footer">   
@@ -187,7 +188,7 @@ function main(obj){
           document.querySelector('.ep'+num).innerHTML+=this.response 
           if(this.readyState==4){
           var res=this.responseText
-          res=res.replace(/Download/ig,'')
+          res=res.replace(/Download/g,'')
           res=res.replace(/- mp4/ig,'')        
           res=res.split('<br><br>')
           
