@@ -130,7 +130,7 @@ app.get('/new',(req,res)=>{
    //  var d='<meta name="viewport" content="width=device-width, initial-scale=1.0">'
    //  var c=`<a href="intent:http://localhost:3000/m.mp4#Intent;package=com.mxtech.videoplayer.ad;S.title=New%20title;end">Launch through Intent scheme.</a>`
   //  res.send(d+c+'<center><h2>hi</h2>'+rv+rt.join('<br><br>'))
-      
+      // 24QFEBXMJCIYQV7K
   }
 })
 })
