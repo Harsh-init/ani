@@ -131,7 +131,10 @@ app.get('/new',(req,res)=>{
    //  var c=`<a href="intent:http://localhost:3000/m.mp4#Intent;package=com.mxtech.videoplayer.ad;S.title=New%20title;end">Launch through Intent scheme.</a>`
   //  res.send(d+c+'<center><h2>hi</h2>'+rv+rt.join('<br><br>'))
       // 24QFEBXMJCIYQV7K
-  }
+      // 7V3NRICEZ6FRKAT4
+      //VRubuXfJv993GsobVjV9OrOeTS0EL6nR5JnVQaEqA5fcBH4cdR43AQfYcunN94Ho
+      //    B0piwoWkrWtpiJVY80BpcTEsMKP49cq8tJ9bvgrb9aPu7gdTSZ4PnvB2MZjVpQhl
+  } 
 })
 })
 app.get('/anime',(req,res)=>{
