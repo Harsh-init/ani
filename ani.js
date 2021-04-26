@@ -128,10 +128,16 @@ app.get('/new',(req,res)=>{
     console.log(rt)
     res.send(rt.toString())
    //  var d='<meta name="viewport" content="width=device-width, initial-scale=1.0">'
+   //father future
+   //nLDuLnyGVMAKI1sEJji2SyWJVOidBK37epxfod3meh8e1gS0MQ6oPp0yh1VbgWoo
+   //aJm9yurZDQbwm8EGcSYVzl4nAhxCAza5k2XP07meyt4p59C1A0k33vy1y9uYWdey
+   
+   
    //  var c=`<a href="intent:http://localhost:3000/m.mp4#Intent;package=com.mxtech.videoplayer.ad;S.title=New%20title;end">Launch through Intent scheme.</a>`
   //  res.send(d+c+'<center><h2>hi</h2>'+rv+rt.join('<br><br>'))
       // 24QFEBXMJCIYQV7K
       // 7V3NRICEZ6FRKAT4
+      // my future
       //VRubuXfJv993GsobVjV9OrOeTS0EL6nR5JnVQaEqA5fcBH4cdR43AQfYcunN94Ho
       //    B0piwoWkrWtpiJVY80BpcTEsMKP49cq8tJ9bvgrb9aPu7gdTSZ4PnvB2MZjVpQhl
   } 
